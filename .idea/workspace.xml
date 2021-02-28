@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="user-web:war" />
+      <artifact name="user-web:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:maven" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:maven" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:thinking-in-spring" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2f0d358d-8e26-41de-a6be-ad4fceb35195" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/web/controller/AuthenticationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/web/filter/AuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/web/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-web-mvc/src/main/java/org/geektimes/web/mvc/FrontControllerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/my-web-mvc/src/main/java/org/geektimes/web/mvc/FrontControllerServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-web-mvc/src/main/java/org/geektimes/web/mvc/controller/RestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/my-web-mvc/src/main/java/org/geektimes/web/mvc/controller/RestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/repository/DatabaseUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/repository/DatabaseUserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/sql/DBConnectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/sql/DBConnectionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/web/filter/CharsetEncodingFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/web/filter/CharsetEncodingFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/web/listener/DBConnectionInitializerListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/web/listener/DBConnectionInitializerListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/src/main/resources/META-INF/services/org.geektimes.web.mvc.controller.Controller" beforeDir="false" afterPath="$PROJECT_DIR$/user-web/src/main/resources/META-INF/services/org.geektimes.web.mvc.controller.Controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-web/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/src/main/webapp/login-form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/user-web/src/main/webapp/login-form.jsp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="JRebelWorkspace">
+    <option name="jrebelEnabledAutocompile" value="true" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:\Program Files\JetBrains\IntelliJ IDEA 2020.2.3\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1oyf9CJwOWYtQl88V8CSjekNYxY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="derby.embedded&#10;derby" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.geektimes.web.mvc" />
+      <recent name="org.geektimes.projects.user.web.filter" />
+      <recent name="org.geektimes.projects.user.web.controller" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="JarApplication" />
+        <option value="MavenRunConfiguration" />
+      </set>
+    </option>
+    <option name="excludedTypes">
+      <set>
+        <option value="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Unnamed" type="Remote" nameIsGenerated="true">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="6666" />
+      <option name="AUTO_RESTART" value="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="6666" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <option name="AUTO_RESTART" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.0.21" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_user-platform" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="2684" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="JRebel Debug">
+        <option name="DEBUG_PORT" value="2685" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="JRebel Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="JRebel Executor">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2f0d358d-8e26-41de-a6be-ad4fceb35195" name="Default Changelist" comment="" />
+      <created>1614263597176</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1614263597176</updated>
+      <workItem from="1614263598534" duration="3442000" />
+      <workItem from="1614268936400" duration="805000" />
+      <workItem from="1614269750246" duration="317000" />
+      <workItem from="1614351042446" duration="54000" />
+      <workItem from="1614428142340" duration="3041000" />
+      <workItem from="1614487081974" duration="8369000" />
+      <workItem from="1614506912385" duration="18175000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="440" y="99" key="#Project_Structure" timestamp="1614269614915">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="440" y="99" key="#Project_Structure/0.0.1920.1050/-2560.0.2560.1410@0.0.1920.1050" timestamp="1614269614915" />
+    <state x="873" y="483" key="#TomEE_Server" timestamp="1614508609228">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="873" y="483" key="#TomEE_Server/0.0.1920.1050/-2560.0.2560.1410@0.0.1920.1050" timestamp="1614508609228" />
+    <state x="872" y="483" key="#Tomcat_Server" timestamp="1614508659491">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="872" y="483" key="#Tomcat_Server/0.0.1920.1050/-2560.0.2560.1410@0.0.1920.1050" timestamp="1614508659491" />
+    <state x="552" y="59" width="1092" height="991" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1614527157976">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="552" y="59" width="1092" height="991" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050/-2560.0.2560.1410@0.0.1920.1050" timestamp="1614527157976" />
+    <state x="765" y="228" key="#com.intellij.ide.util.MemberChooser" timestamp="1614521669522">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="765" y="228" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050/-2560.0.2560.1410@0.0.1920.1050" timestamp="1614521669522" />
+    <state x="821" y="258" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1614508613123">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="821" y="258" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.0.1920.1050/-2560.0.2560.1410@0.0.1920.1050" timestamp="1614508613123" />
+    <state x="717" y="389" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1614507657897">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="717" y="389" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1050/-2560.0.2560.1410@0.0.1920.1050" timestamp="1614507657897" />
+    <state x="184" y="86" key="DiffContextDialog" timestamp="1614269065226">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="184" y="86" key="DiffContextDialog/0.0.1920.1050/-2560.0.2560.1410@0.0.1920.1050" timestamp="1614269065226" />
+    <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1614508658718">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050/-2560.0.2560.1410@0.0.1920.1050" timestamp="1614508658718" />
+    <state width="1877" height="298" key="GridCell.Tab.0.bottom" timestamp="1614528744211">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="298" key="GridCell.Tab.0.bottom/0.0.1920.1050/-2560.0.2560.1410@0.0.1920.1050" timestamp="1614528744211" />
+    <state width="1877" height="298" key="GridCell.Tab.0.center" timestamp="1614528744210">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="298" key="GridCell.Tab.0.center/0.0.1920.1050/-2560.0.2560.1410@0.0.1920.1050" timestamp="1614528744210" />
+    <state width="1877" height="298" key="GridCell.Tab.0.left" timestamp="1614528744210">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="298" key="GridCell.Tab.0.left/0.0.1920.1050/-2560.0.2560.1410@0.0.1920.1050" timestamp="1614528744210" />
+    <state width="1877" height="298" key="GridCell.Tab.0.right" timestamp="1614528744211">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="298" key="GridCell.Tab.0.right/0.0.1920.1050/-2560.0.2560.1410@0.0.1920.1050" timestamp="1614528744211" />
+    <state width="1877" height="579" key="GridCell.Tab.1.bottom" timestamp="1614527160474">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="579" key="GridCell.Tab.1.bottom/0.0.1920.1050/-2560.0.2560.1410@0.0.1920.1050" timestamp="1614527160474" />
+    <state width="1877" height="579" key="GridCell.Tab.1.center" timestamp="1614527160474">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="579" key="GridCell.Tab.1.center/0.0.1920.1050/-2560.0.2560.1410@0.0.1920.1050" timestamp="1614527160474" />
+    <state width="1877" height="579" key="GridCell.Tab.1.left" timestamp="1614527160474">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="579" key="GridCell.Tab.1.left/0.0.1920.1050/-2560.0.2560.1410@0.0.1920.1050" timestamp="1614527160474" />
+    <state width="1877" height="579" key="GridCell.Tab.1.right" timestamp="1614527160474">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="579" key="GridCell.Tab.1.right/0.0.1920.1050/-2560.0.2560.1410@0.0.1920.1050" timestamp="1614527160474" />
+    <state width="1877" height="579" key="GridCell.Tab.2.bottom" timestamp="1614527160474">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="579" key="GridCell.Tab.2.bottom/0.0.1920.1050/-2560.0.2560.1410@0.0.1920.1050" timestamp="1614527160474" />
+    <state width="1877" height="579" key="GridCell.Tab.2.center" timestamp="1614527160474">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="579" key="GridCell.Tab.2.center/0.0.1920.1050/-2560.0.2560.1410@0.0.1920.1050" timestamp="1614527160474" />
+    <state width="1877" height="579" key="GridCell.Tab.2.left" timestamp="1614527160474">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="579" key="GridCell.Tab.2.left/0.0.1920.1050/-2560.0.2560.1410@0.0.1920.1050" timestamp="1614527160474" />
+    <state width="1877" height="579" key="GridCell.Tab.2.right" timestamp="1614527160474">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="579" key="GridCell.Tab.2.right/0.0.1920.1050/-2560.0.2560.1410@0.0.1920.1050" timestamp="1614527160474" />
+    <state x="606" y="245" key="RollbackChangesDialog" timestamp="1614269066229">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="606" y="245" key="RollbackChangesDialog/0.0.1920.1050/-2560.0.2560.1410@0.0.1920.1050" timestamp="1614269066229" />
+    <state x="461" y="169" width="1156" height="852" key="SettingsEditor" timestamp="1614521316009">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="461" y="169" width="1156" height="852" key="SettingsEditor/0.0.1920.1050/-2560.0.2560.1410@0.0.1920.1050" timestamp="1614521316009" />
+    <state x="552" y="257" key="Vcs.Push.Dialog.v2" timestamp="1614528940937">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="552" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-2560.0.2560.1410@0.0.1920.1050" timestamp="1614528940937" />
+    <state x="762" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1614528942609">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="762" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050/-2560.0.2560.1410@0.0.1920.1050" timestamp="1614528942609" />
+    <state width="363" height="352" key="documentation.popup.size" timestamp="1614521829495">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="363" height="352" key="documentation.popup.size/0.0.1920.1050/-2560.0.2560.1410@0.0.1920.1050" timestamp="1614521829495" />
+    <state x="663" y="261" width="631" height="528" key="find.popup" timestamp="1614526853404">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="663" y="261" width="631" height="528" key="find.popup/0.0.1920.1050/-2560.0.2560.1410@0.0.1920.1050" timestamp="1614526853404" />
+    <state x="657" y="281" key="refactoring.ChangeSignatureDialog" timestamp="1614524586360">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="657" y="281" key="refactoring.ChangeSignatureDialog/0.0.1920.1050/-2560.0.2560.1410@0.0.1920.1050" timestamp="1614524586360" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1614502618933">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050/-2560.0.2560.1410@0.0.1920.1050" timestamp="1614502618933" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/user-web/src/main/webapp/login-form.jsp</url>
+          <line>31</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
