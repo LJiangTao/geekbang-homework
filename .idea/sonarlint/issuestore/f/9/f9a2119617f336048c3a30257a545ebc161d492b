@@ -1,0 +1,25 @@
+
+[
+java:S1128"@Remove this unused import 'javax.servlet.annotation.WebServlet'.(™ì¢´şÿÿÿÿ
+I
+java:S1135˜"2Complete the task associated to this TODO comment.(…ïœ†
+A
+java:S1128",Remove this unused import 'javax.ws.rs.GET'.(Şãw
+W	java:S125¦"<This block of commented-out lines of code should be removed.(¦ì·òùÿÿÿÿ
+U
+java:S1161/":Add the "@Override" annotation above this method signature(§Ü§¦ÿÿÿÿÿ
+n
+java:S2226("XRemove this misleading mutable servlet instance field or make it "static" and/or "final"(¼ŸŠ
+Q	java:S125"<This block of commented-out lines of code should be removed.(ÊÀ¹/
+9
+java:S3626–"Remove this redundant jump.(ûÁİ…8Œ¢ËÏı.
+h
+java:S3776k"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(Å•ĞÆ
+s
+java:S2226#"XRemove this misleading mutable servlet instance field or make it "static" and/or "final"(ïĞë¼ùÿÿÿÿ
+7
+java:S1643B"Use a StringBuilder instead.(¨ñ´­üÿÿÿÿ
+J
+java:S1128"/Remove this unused import 'javax.ws.rs.DELETE'.(×ï‘«üÿÿÿÿ
+=
+java:S1075’"&Remove this hard-coded path-delimiter.(É©æƒ
