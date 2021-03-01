@@ -26,8 +26,8 @@ public class AuthenticationFilter implements Filter {
         String token = ((HttpServletRequest) request).getHeader("token");
         System.out.println("Authentication ....");
         if (StringUtils.isBlank(token)) {
-//            ((HttpServletResponse)response).sendRedirect("/user/register");
-            request.getRequestDispatcher("/user/register").forward(request, response);
+//            ((HttpServletResponse)response).sendRedirect("/register");
+            request.getRequestDispatcher("/register").forward(request, response);
             return;
         }
 

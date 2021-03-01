@@ -19,34 +19,15 @@
     </style>
 </head>
 <body>
-<%
-    String path = request.getContextPath();
-
-    request.setCharacterEncoding("utf-8");
-
-    String username = request.getParameter("inputEmail");
-    String pwd = request.getParameter("inputPassword");
-    String[] hobby = request.getParameterValues("hobby");
-    String sex = request.getParameter("sex");
-    String home = request.getParameter("home");
-    System.out.println(username + ", " + pwd);
-    if("admin".equals(username) && "000".equals(pwd)){
-        session.setAttribute("username", username);
-        session.setAttribute("hobby", hobby);
-        session.setAttribute("home", home);
-        session.setAttribute("sex", sex);
-        request.getRequestDispatcher("show.jsp").forward(request, response);
-    }
-%>
 <div class="container">
-    <form class="form-signin" action="login-form.jsp">
+    <form class="form-signin" action="/login" method="post">
         <h1 class="h3 mb-3 font-weight-normal">登录</h1>
 
-        <label for="inputEmail" class="sr-only">请输出电子邮件</label>
-        <input type="email" id="inputEmail" class="form-control" placeholder="请输入电子邮件" required autofocus>
+        <label for="username" class="sr-only">请输出电子邮件</label>
+        <input type="text" name="username" id="username" class="form-control" placeholder="请输入用户名" required autofocus>
 
         <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="请输入密码" required>
+        <input type="password" name="password" id="inputPassword" class="form-control" placeholder="请输入密码" required>
 
         <div class="checkbox mb-3">
             <label> <input type="checkbox" value="remember-me">

@@ -27,11 +27,9 @@ public class DatabaseUserRepository implements UserRepository {
      */
     private static Consumer<Throwable> COMMON_EXCEPTION_HANDLER = e -> logger.log(Level.SEVERE, e.getMessage());
 
-    public static final String INSERT_USER_DML_SQL =
-            "INSERT INTO users(name,password,email,phoneNumber) VALUES " +
-                    "(?,?,?,?)";
+    public static final String INSERT_USER_DML_SQL = "INSERT INTO users(name,password) VALUES (?,?)";
 
-    public static final String QUERY_ALL_USERS_DML_SQL = "SELECT id,name,password,email,phoneNumber FROM users";
+    public static final String QUERY_ALL_USERS_DML_SQL = "SELECT id,name,password FROM users";
 
     private final DBConnectionManager dbConnectionManager;
 
@@ -50,8 +48,6 @@ public class DatabaseUserRepository implements UserRepository {
             PreparedStatement preparedStatement = connection.prepareStatement(INSERT_USER_DML_SQL);
             preparedStatement.setString(1, user.getName());
             preparedStatement.setString(2, user.getPassword());
-            preparedStatement.setString(3, user.getEmail());
-            preparedStatement.setString(4, user.getPhoneNumber());
             preparedStatement.execute();
             return true;
         } catch (Exception throwables) {
@@ -82,7 +78,7 @@ public class DatabaseUserRepository implements UserRepository {
 
     @Override
     public User getByNameAndPassword(String userName, String password) {
-        return executeQuery("SELECT id,name,password,email,phoneNumber FROM users WHERE name=? and password=?",
+        return executeQuery("SELECT id,name,password FROM users WHERE name=? and password=?",
                 resultSet -> {
                     List<User> users = convert(resultSet);
                     if (users.isEmpty()) return null;
@@ -92,7 +88,7 @@ public class DatabaseUserRepository implements UserRepository {
 
     @Override
     public Collection<User> getAll() {
-        return executeQuery("SELECT id,name,password,email,phoneNumber FROM users", this::convert, e -> {
+        return executeQuery("SELECT id,name,password FROM users", this::convert, e -> {
             // 异常处理
         });
     }
@@ -120,8 +116,8 @@ public class DatabaseUserRepository implements UserRepository {
 
                 // Boolean -> boolean
                 String methodName = preparedStatementMethodMappings.get(argType);
-                Method method = PreparedStatement.class.getMethod(methodName, wrapperType);
-                method.invoke(preparedStatement, i + 1, args);
+                Method method = PreparedStatement.class.getMethod(methodName,  int.class, wrapperType);
+                method.invoke(preparedStatement, i + 1, args[i]);
             }
             ResultSet resultSet = preparedStatement.executeQuery();
             // 返回一个 POJO List -> ResultSet -> POJO List
