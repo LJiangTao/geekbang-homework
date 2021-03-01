@@ -3,16 +3,16 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.geekbang.projects</groupId>
-  <artifactId>user-platform</artifactId>
+  <artifactId>homework</artifactId>
   <version>v1-SNAPSHOT</version>
   <packaging>pom</packaging>
-  <name>User Platform v1-SNAPSHOT</name>
+  <name>ROOT</name>
   <modules>
-    <module>my-web-mvc</module>
-    <module>user-web</module>
+    <module>lesson_1</module>
   </modules>
   <properties>
     <maven.source.version>3.2.1</maven.source.version>
+    <lesson.one.artifact>lesson-one</lesson.one.artifact>
     <javax.ws.rs-api.version>2.0.1</javax.ws.rs-api.version>
     <commons-lang.version>2.6</commons-lang.version>
     <file.encoding>UTF-8</file.encoding>

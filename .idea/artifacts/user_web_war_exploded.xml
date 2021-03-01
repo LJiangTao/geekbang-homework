@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" build-on-make="true" name="user-web:war exploded">
-    <output-path>$PROJECT_DIR$/user-web/target/user-web-v1-SNAPSHOT</output-path>
+  <artifact type="exploded-war" name="user-web:war exploded">
+    <output-path>$PROJECT_DIR$/lesson_1/user-web/target/user-web-v1-SNAPSHOT</output-path>
     <properties id="maven-jee-properties">
       <options>
         <exploded>true</exploded>
@@ -24,7 +24,7 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/user-web/target/user-web-v1-SNAPSHOT/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/lesson_1/user-web/target/user-web-v1-SNAPSHOT/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="user-web/web/Web" />
     </root>

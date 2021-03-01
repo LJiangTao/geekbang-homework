@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ArtifactsWorkspaceSettings">
-    <artifacts-to-build>
-      <artifact name="user-web:war" />
-      <artifact name="user-web:war exploded" />
-    </artifacts-to-build>
-  </component>
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -24,274 +15,394 @@
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:maven" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:maven" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:thinking-in-spring" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
     </expand>
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f0d358d-8e26-41de-a6be-ad4fceb35195" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/web/controller/AuthenticationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/web/filter/AuthenticationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/web/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-web-mvc/src/main/java/org/geektimes/web/mvc/FrontControllerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/my-web-mvc/src/main/java/org/geektimes/web/mvc/FrontControllerServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-web-mvc/src/main/java/org/geektimes/web/mvc/controller/RestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/my-web-mvc/src/main/java/org/geektimes/web/mvc/controller/RestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/repository/DatabaseUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/repository/DatabaseUserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/sql/DBConnectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/sql/DBConnectionManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/web/filter/CharsetEncodingFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/web/filter/CharsetEncodingFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/web/listener/DBConnectionInitializerListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/web/listener/DBConnectionInitializerListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-web/src/main/resources/META-INF/services/org.geektimes.web.mvc.controller.Controller" beforeDir="false" afterPath="$PROJECT_DIR$/user-web/src/main/resources/META-INF/services/org.geektimes.web.mvc.controller.Controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-web/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-web/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-web/src/main/webapp/login-form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/user-web/src/main/webapp/login-form.jsp" afterDir="false" />
+    <list default="true" id="168e1800-eac3-4390-ae69-23cee86f2418" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/google-java-format.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/a/0a7f1bcc0f8937fa2b9e3d022a87e27a94117dbc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/e/4e9fd9b91ebb710d73cda26634066f6db26b0980" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/2/62e0b15c4259d82bd9f27c1e554b27412e77e6bf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/.extract/.tomcat_executable_archive.timestamp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/.extract/conf/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/.extract/logs/access_log.2021-03-01" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/.extract/webapps/ROOT/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/.extract/webapps/ROOT/META-INF/maven/org.geekbang.projects/user-web/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/.extract/webapps/ROOT/META-INF/maven/org.geekbang.projects/user-web/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/.extract/webapps/ROOT/WEB-INF/classes/META-INF/db/DDL/users_table_ddl.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/.extract/webapps/ROOT/WEB-INF/classes/META-INF/services/java.sql.Driver" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/.extract/webapps/ROOT/WEB-INF/classes/META-INF/services/org.geektimes.web.mvc.controller.Controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/.extract/webapps/ROOT/WEB-INF/context.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/.extract/webapps/ROOT/WEB-INF/jsp/coda/footer.jspf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/.extract/webapps/ROOT/WEB-INF/jsp/prelude/header.jspf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/.extract/webapps/ROOT/WEB-INF/jsp/prelude/include-css.jspf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/.extract/webapps/ROOT/WEB-INF/jsp/prelude/include-head-meta.jspf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/.extract/webapps/ROOT/WEB-INF/jsp/prelude/include-js.jspf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/.extract/webapps/ROOT/WEB-INF/jsp/prelude/include-taglibs.jspf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/.extract/webapps/ROOT/WEB-INF/jsp/prelude/variables.jspf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/.extract/webapps/ROOT/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/.extract/webapps/ROOT/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/.extract/webapps/ROOT/login-form.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/.extract/webapps/ROOT/static/css/bootstrap-4.6.0.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/.extract/webapps/ROOT/static/js/bootstrap-4.6.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/.extract/webapps/ROOT/static/js/jquery-3.5.1.slim.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/.extract/webapps/ROOT/static/js/popper-1.16.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/.flattened-pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/my-web-mvc/.flattened-pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/my-web-mvc/my-web-mvc.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/my-web-mvc/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/my-web-mvc/src/main/java/org/geektimes/web/mvc/FrontControllerServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/my-web-mvc/src/main/java/org/geektimes/web/mvc/HandlerMethodInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/my-web-mvc/src/main/java/org/geektimes/web/mvc/controller/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/my-web-mvc/src/main/java/org/geektimes/web/mvc/controller/PageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/my-web-mvc/src/main/java/org/geektimes/web/mvc/controller/RestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/my-web-mvc/src/main/java/org/geektimes/web/mvc/header/CacheControlHeaderWriter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/my-web-mvc/src/main/java/org/geektimes/web/mvc/header/HeaderWriter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/my-web-mvc/src/main/java/org/geektimes/web/mvc/header/annotation/CacheControl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/my-web-mvc/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/my-web-mvc/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/my-web-mvc/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/my-web-mvc/target/my-web-mvc-v1-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/.flattened-pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/src/main/java/org/geektimes/function/ThrowableFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/src/main/java/org/geektimes/projects/user/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/src/main/java/org/geektimes/projects/user/repository/DatabaseUserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/src/main/java/org/geektimes/projects/user/repository/InMemoryUserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/src/main/java/org/geektimes/projects/user/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/src/main/java/org/geektimes/projects/user/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/src/main/java/org/geektimes/projects/user/sql/DBConnectionManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/src/main/java/org/geektimes/projects/user/web/controller/AuthenticationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/src/main/java/org/geektimes/projects/user/web/controller/HelloWorldController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/src/main/java/org/geektimes/projects/user/web/filter/AuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/src/main/java/org/geektimes/projects/user/web/filter/CharsetEncodingFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/src/main/java/org/geektimes/projects/user/web/listener/DBConnectionInitializerListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/src/main/java/org/geektimes/projects/user/web/services/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/src/main/resources/META-INF/db/DDL/users_table_ddl.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/src/main/resources/META-INF/services/java.sql.Driver" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/src/main/resources/META-INF/services/org.geektimes.web.mvc.controller.Controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/src/main/webapp/WEB-INF/context.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/src/main/webapp/WEB-INF/jsp/coda/footer.jspf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/src/main/webapp/WEB-INF/jsp/prelude/header.jspf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/src/main/webapp/WEB-INF/jsp/prelude/include-css.jspf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/src/main/webapp/WEB-INF/jsp/prelude/include-head-meta.jspf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/src/main/webapp/WEB-INF/jsp/prelude/include-js.jspf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/src/main/webapp/WEB-INF/jsp/prelude/include-taglibs.jspf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/src/main/webapp/WEB-INF/jsp/prelude/variables.jspf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/src/main/webapp/login-form.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/src/main/webapp/static/css/bootstrap-4.6.0.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/src/main/webapp/static/js/bootstrap-4.6.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/src/main/webapp/static/js/jquery-3.5.1.slim.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/src/main/webapp/static/js/popper-1.16.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/target/user-web-v1-SNAPSHOT-war-exec.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/target/user-web-v1-SNAPSHOT.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/target/user-web-v1-SNAPSHOT/WEB-INF/classes/META-INF/db/DDL/users_table_ddl.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/target/user-web-v1-SNAPSHOT/WEB-INF/classes/META-INF/services/java.sql.Driver" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/target/user-web-v1-SNAPSHOT/WEB-INF/classes/META-INF/services/org.geektimes.web.mvc.controller.Controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/target/user-web-v1-SNAPSHOT/WEB-INF/classes/org/geektimes/function/ThrowableFunction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/target/user-web-v1-SNAPSHOT/WEB-INF/classes/org/geektimes/projects/user/domain/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/target/user-web-v1-SNAPSHOT/WEB-INF/classes/org/geektimes/projects/user/repository/DatabaseUserRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/target/user-web-v1-SNAPSHOT/WEB-INF/classes/org/geektimes/projects/user/repository/InMemoryUserRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/target/user-web-v1-SNAPSHOT/WEB-INF/classes/org/geektimes/projects/user/repository/UserRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/target/user-web-v1-SNAPSHOT/WEB-INF/classes/org/geektimes/projects/user/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/target/user-web-v1-SNAPSHOT/WEB-INF/classes/org/geektimes/projects/user/sql/DBConnectionManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/target/user-web-v1-SNAPSHOT/WEB-INF/classes/org/geektimes/projects/user/web/controller/AuthenticationController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/target/user-web-v1-SNAPSHOT/WEB-INF/classes/org/geektimes/projects/user/web/controller/HelloWorldController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/target/user-web-v1-SNAPSHOT/WEB-INF/classes/org/geektimes/projects/user/web/filter/AuthenticationFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/target/user-web-v1-SNAPSHOT/WEB-INF/classes/org/geektimes/projects/user/web/filter/CharsetEncodingFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/target/user-web-v1-SNAPSHOT/WEB-INF/classes/org/geektimes/projects/user/web/listener/DBConnectionInitializerListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/target/user-web-v1-SNAPSHOT/WEB-INF/classes/org/geektimes/projects/user/web/services/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/target/user-web-v1-SNAPSHOT/WEB-INF/context.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/target/user-web-v1-SNAPSHOT/WEB-INF/jsp/coda/footer.jspf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/target/user-web-v1-SNAPSHOT/WEB-INF/jsp/prelude/header.jspf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/target/user-web-v1-SNAPSHOT/WEB-INF/jsp/prelude/include-css.jspf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/target/user-web-v1-SNAPSHOT/WEB-INF/jsp/prelude/include-head-meta.jspf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/target/user-web-v1-SNAPSHOT/WEB-INF/jsp/prelude/include-js.jspf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/target/user-web-v1-SNAPSHOT/WEB-INF/jsp/prelude/include-taglibs.jspf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/target/user-web-v1-SNAPSHOT/WEB-INF/jsp/prelude/variables.jspf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/target/user-web-v1-SNAPSHOT/WEB-INF/lib/commons-lang-2.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/target/user-web-v1-SNAPSHOT/WEB-INF/lib/derby-10.1.3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/target/user-web-v1-SNAPSHOT/WEB-INF/lib/javax.ws.rs-api-2.0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/target/user-web-v1-SNAPSHOT/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/target/user-web-v1-SNAPSHOT/WEB-INF/lib/my-web-mvc-v1-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/target/user-web-v1-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/target/user-web-v1-SNAPSHOT/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/target/user-web-v1-SNAPSHOT/login-form.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/target/user-web-v1-SNAPSHOT/static/css/bootstrap-4.6.0.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/target/user-web-v1-SNAPSHOT/static/js/bootstrap-4.6.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/target/user-web-v1-SNAPSHOT/static/js/jquery-3.5.1.slim.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/target/user-web-v1-SNAPSHOT/static/js/popper-1.16.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/target/war-exec.manifest" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/target/war-exec.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_1/user-web/user-web.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.extract/.tomcat_executable_archive.timestamp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.extract/conf/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.extract/logs/access_log.2021-03-01" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.extract/webapps/ROOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.extract/webapps/ROOT/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.extract/webapps/ROOT/META-INF/maven/org.geekbang.projects/user-web/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.extract/webapps/ROOT/META-INF/maven/org.geekbang.projects/user-web/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.extract/webapps/ROOT/WEB-INF/classes/META-INF/db/DDL/users_table_ddl.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.extract/webapps/ROOT/WEB-INF/classes/META-INF/services/java.sql.Driver" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.extract/webapps/ROOT/WEB-INF/classes/META-INF/services/org.geektimes.web.mvc.controller.Controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.extract/webapps/ROOT/WEB-INF/classes/org/geektimes/function/ThrowableFunction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.extract/webapps/ROOT/WEB-INF/classes/org/geektimes/projects/user/domain/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.extract/webapps/ROOT/WEB-INF/classes/org/geektimes/projects/user/repository/DatabaseUserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.extract/webapps/ROOT/WEB-INF/classes/org/geektimes/projects/user/repository/InMemoryUserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.extract/webapps/ROOT/WEB-INF/classes/org/geektimes/projects/user/repository/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.extract/webapps/ROOT/WEB-INF/classes/org/geektimes/projects/user/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.extract/webapps/ROOT/WEB-INF/classes/org/geektimes/projects/user/sql/DBConnectionManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.extract/webapps/ROOT/WEB-INF/classes/org/geektimes/projects/user/web/controller/AuthenticationController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.extract/webapps/ROOT/WEB-INF/classes/org/geektimes/projects/user/web/controller/HelloWorldController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.extract/webapps/ROOT/WEB-INF/classes/org/geektimes/projects/user/web/filter/AuthenticationFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.extract/webapps/ROOT/WEB-INF/classes/org/geektimes/projects/user/web/filter/CharsetEncodingFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.extract/webapps/ROOT/WEB-INF/classes/org/geektimes/projects/user/web/listener/DBConnectionInitializerListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.extract/webapps/ROOT/WEB-INF/classes/org/geektimes/projects/user/web/services/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.extract/webapps/ROOT/WEB-INF/context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.extract/webapps/ROOT/WEB-INF/jsp/coda/footer.jspf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.extract/webapps/ROOT/WEB-INF/jsp/prelude/header.jspf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.extract/webapps/ROOT/WEB-INF/jsp/prelude/include-css.jspf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.extract/webapps/ROOT/WEB-INF/jsp/prelude/include-head-meta.jspf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.extract/webapps/ROOT/WEB-INF/jsp/prelude/include-js.jspf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.extract/webapps/ROOT/WEB-INF/jsp/prelude/include-taglibs.jspf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.extract/webapps/ROOT/WEB-INF/jsp/prelude/variables.jspf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.extract/webapps/ROOT/WEB-INF/lib/commons-lang-2.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.extract/webapps/ROOT/WEB-INF/lib/derby-10.1.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.extract/webapps/ROOT/WEB-INF/lib/javax.ws.rs-api-2.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.extract/webapps/ROOT/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.extract/webapps/ROOT/WEB-INF/lib/my-web-mvc-v1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.extract/webapps/ROOT/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.extract/webapps/ROOT/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.extract/webapps/ROOT/login-form.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.extract/webapps/ROOT/static/css/bootstrap-4.6.0.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.extract/webapps/ROOT/static/js/bootstrap-4.6.0.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.extract/webapps/ROOT/static/js/jquery-3.5.1.slim.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.extract/webapps/ROOT/static/js/popper-1.16.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.extract/work/Tomcat/localhost/_/SESSIONS.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.extract/work/Tomcat/localhost/_/org/apache/jsp/login_002dform_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.extract/work/Tomcat/localhost/_/org/apache/jsp/login_002dform_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.flattened-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.flattened-pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/user_web_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/user_web_war.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/user_web_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/user_web_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_ws_rs_javax_ws_rs_api_2_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_ws_rs_javax_ws_rs_api_2_0_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_derby_derby_10_1_3_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_derby_derby_10_1_3_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/1/01e109a03377c76e5de424ad7be991a1e27146b1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/7/079d09c8e7237725f59fea3e524409bea0df6bec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/c/1c240c8617c8c5e7357977e237bd8a7f759ed1cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/f/1fa7a49559ad7344cd30957681401a7b63994ab9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/1/2125de0470f7774d61b42446e59e1b24acfba511" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/c/2c0e076cac3e51c6fb44727de128dd06e24117fd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/3/33eae1cf144a0489c639d76b207bbbd0ba3902b1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/0/40e1db9821307808a168298b0bf52a7eb01918da" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/b/5b0972e162e9c4fb469022daa85b7d0a01d0ad38" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/5/65241c46990d8d072c1d1395cef6a22cea1fbd72" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/9/693ff07bf2290c73f60a2b8614f679979d950702" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/d/6d72e0faec73f62a9959da59c89e978264f0139b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/e/6e263dc897845b7e46491f08eac9a3e51fb44c63" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/4/74a7edf783998e4ed03df2d66a10aef5f34bad01" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/d/7d301f3fdd8fff69e6fd603e47660711351b5e10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/1/91038bb7f703ee7592c1a2680c588789c56dfc85" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/d/adede1e634040e2c7a13246fba5fcd902023d5b6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/a/ba6d99d6b3920df3821b990691925643b87f8e72" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/f/cff7d95f4fca465c4e0e8c92f24845d9e1391f71" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/f/df077354833bcf95c520244bafd9125ea266c4b8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/1/e1f58afcf0de9a67ba6c8635521d00d641f49afa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/e/eeac80cebd223f5535d989cfb2e3aa7e10cba7e9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/9/f9a2119617f336048c3a30257a545ebc161d492b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/derby.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-web-mvc/.flattened-pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-web-mvc/my-web-mvc.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-web-mvc/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-web-mvc/src/main/java/org/geektimes/web/mvc/FrontControllerServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-web-mvc/src/main/java/org/geektimes/web/mvc/HandlerMethodInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-web-mvc/src/main/java/org/geektimes/web/mvc/controller/Controller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-web-mvc/src/main/java/org/geektimes/web/mvc/controller/PageController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-web-mvc/src/main/java/org/geektimes/web/mvc/controller/RestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-web-mvc/src/main/java/org/geektimes/web/mvc/header/CacheControlHeaderWriter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-web-mvc/src/main/java/org/geektimes/web/mvc/header/HeaderWriter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-web-mvc/src/main/java/org/geektimes/web/mvc/header/annotation/CacheControl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-web-mvc/target/classes/org/geektimes/web/mvc/FrontControllerServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-web-mvc/target/classes/org/geektimes/web/mvc/HandlerMethodInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-web-mvc/target/classes/org/geektimes/web/mvc/controller/Controller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-web-mvc/target/classes/org/geektimes/web/mvc/controller/PageController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-web-mvc/target/classes/org/geektimes/web/mvc/controller/RestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-web-mvc/target/classes/org/geektimes/web/mvc/header/CacheControlHeaderWriter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-web-mvc/target/classes/org/geektimes/web/mvc/header/HeaderWriter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-web-mvc/target/classes/org/geektimes/web/mvc/header/annotation/CacheControl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-web-mvc/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-web-mvc/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-web-mvc/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-web-mvc/target/my-web-mvc-v1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-platform.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/.flattened-pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/function/ThrowableFunction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/domain/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/repository/DatabaseUserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/repository/InMemoryUserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/sql/DBConnectionManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/web/controller/AuthenticationController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/web/controller/HelloWorldController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/web/filter/AuthenticationFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/web/filter/CharsetEncodingFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/web/listener/DBConnectionInitializerListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/web/services/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/src/main/resources/META-INF/db/DDL/users_table_ddl.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/src/main/resources/META-INF/services/java.sql.Driver" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/src/main/resources/META-INF/services/org.geektimes.web.mvc.controller.Controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/src/main/webapp/WEB-INF/context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/src/main/webapp/WEB-INF/jsp/coda/footer.jspf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/src/main/webapp/WEB-INF/jsp/prelude/header.jspf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/src/main/webapp/WEB-INF/jsp/prelude/include-css.jspf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/src/main/webapp/WEB-INF/jsp/prelude/include-head-meta.jspf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/src/main/webapp/WEB-INF/jsp/prelude/include-js.jspf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/src/main/webapp/WEB-INF/jsp/prelude/include-taglibs.jspf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/src/main/webapp/WEB-INF/jsp/prelude/variables.jspf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/src/main/webapp/login-form.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/src/main/webapp/static/css/bootstrap-4.6.0.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/src/main/webapp/static/js/bootstrap-4.6.0.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/src/main/webapp/static/js/jquery-3.5.1.slim.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/src/main/webapp/static/js/popper-1.16.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/target/classes/META-INF/db/DDL/users_table_ddl.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/target/classes/META-INF/services/java.sql.Driver" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/target/classes/META-INF/services/org.geektimes.web.mvc.controller.Controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/target/classes/org/geektimes/function/ThrowableFunction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/target/classes/org/geektimes/projects/user/domain/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/target/classes/org/geektimes/projects/user/repository/DatabaseUserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/target/classes/org/geektimes/projects/user/repository/InMemoryUserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/target/classes/org/geektimes/projects/user/repository/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/target/classes/org/geektimes/projects/user/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/target/classes/org/geektimes/projects/user/sql/DBConnectionManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/target/classes/org/geektimes/projects/user/web/controller/AuthenticationController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/target/classes/org/geektimes/projects/user/web/controller/HelloWorldController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/target/classes/org/geektimes/projects/user/web/filter/AuthenticationFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/target/classes/org/geektimes/projects/user/web/filter/CharsetEncodingFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/target/classes/org/geektimes/projects/user/web/listener/DBConnectionInitializerListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/target/classes/org/geektimes/projects/user/web/services/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/target/user-web-v1-SNAPSHOT-war-exec.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/target/user-web-v1-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/target/user-web-v1-SNAPSHOT/WEB-INF/classes/META-INF/db/DDL/users_table_ddl.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/target/user-web-v1-SNAPSHOT/WEB-INF/classes/META-INF/services/java.sql.Driver" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/target/user-web-v1-SNAPSHOT/WEB-INF/classes/META-INF/services/org.geektimes.web.mvc.controller.Controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/target/user-web-v1-SNAPSHOT/WEB-INF/classes/org/geektimes/function/ThrowableFunction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/target/user-web-v1-SNAPSHOT/WEB-INF/classes/org/geektimes/projects/user/domain/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/target/user-web-v1-SNAPSHOT/WEB-INF/classes/org/geektimes/projects/user/repository/DatabaseUserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/target/user-web-v1-SNAPSHOT/WEB-INF/classes/org/geektimes/projects/user/repository/InMemoryUserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/target/user-web-v1-SNAPSHOT/WEB-INF/classes/org/geektimes/projects/user/repository/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/target/user-web-v1-SNAPSHOT/WEB-INF/classes/org/geektimes/projects/user/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/target/user-web-v1-SNAPSHOT/WEB-INF/classes/org/geektimes/projects/user/sql/DBConnectionManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/target/user-web-v1-SNAPSHOT/WEB-INF/classes/org/geektimes/projects/user/web/controller/AuthenticationController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/target/user-web-v1-SNAPSHOT/WEB-INF/classes/org/geektimes/projects/user/web/controller/HelloWorldController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/target/user-web-v1-SNAPSHOT/WEB-INF/classes/org/geektimes/projects/user/web/filter/AuthenticationFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/target/user-web-v1-SNAPSHOT/WEB-INF/classes/org/geektimes/projects/user/web/filter/CharsetEncodingFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/target/user-web-v1-SNAPSHOT/WEB-INF/classes/org/geektimes/projects/user/web/listener/DBConnectionInitializerListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/target/user-web-v1-SNAPSHOT/WEB-INF/classes/org/geektimes/projects/user/web/services/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/target/user-web-v1-SNAPSHOT/WEB-INF/context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/target/user-web-v1-SNAPSHOT/WEB-INF/jsp/coda/footer.jspf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/target/user-web-v1-SNAPSHOT/WEB-INF/jsp/prelude/header.jspf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/target/user-web-v1-SNAPSHOT/WEB-INF/jsp/prelude/include-css.jspf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/target/user-web-v1-SNAPSHOT/WEB-INF/jsp/prelude/include-head-meta.jspf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/target/user-web-v1-SNAPSHOT/WEB-INF/jsp/prelude/include-js.jspf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/target/user-web-v1-SNAPSHOT/WEB-INF/jsp/prelude/include-taglibs.jspf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/target/user-web-v1-SNAPSHOT/WEB-INF/jsp/prelude/variables.jspf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/target/user-web-v1-SNAPSHOT/WEB-INF/lib/commons-lang-2.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/target/user-web-v1-SNAPSHOT/WEB-INF/lib/derby-10.1.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/target/user-web-v1-SNAPSHOT/WEB-INF/lib/javax.ws.rs-api-2.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/target/user-web-v1-SNAPSHOT/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/target/user-web-v1-SNAPSHOT/WEB-INF/lib/my-web-mvc-v1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/target/user-web-v1-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/target/user-web-v1-SNAPSHOT/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/target/user-web-v1-SNAPSHOT/login-form.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/target/user-web-v1-SNAPSHOT/static/css/bootstrap-4.6.0.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/target/user-web-v1-SNAPSHOT/static/js/bootstrap-4.6.0.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/target/user-web-v1-SNAPSHOT/static/js/jquery-3.5.1.slim.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/target/user-web-v1-SNAPSHOT/static/js/popper-1.16.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/target/war-exec.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/target/war-exec.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/user-web.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CompilerWorkspaceConfiguration">
-    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
-  </component>
-  <component name="JRebelWorkspace">
-    <option name="jrebelEnabledAutocompile" value="true" />
-  </component>
-  <component name="LogFilters">
-    <option name="FILTER_ERRORS" value="false" />
-    <option name="FILTER_WARNINGS" value="false" />
-    <option name="FILTER_INFO" value="true" />
-    <option name="FILTER_DEBUG" value="true" />
-    <option name="CUSTOM_FILTER" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="D:\Program Files\JetBrains\IntelliJ IDEA 2020.2.3\plugins\maven\lib\maven3" />
+        <option name="mavenHome" value="D:/Software/maven" />
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectId" id="1oyf9CJwOWYtQl88V8CSjekNYxY" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1p8dftG93p1R4abqblN9cQOgwzK" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="derby.embedded&#10;derby" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Artifacts" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
   </component>
-  <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="org.geektimes.web.mvc" />
-      <recent name="org.geektimes.projects.user.web.filter" />
-      <recent name="org.geektimes.projects.user.web.controller" />
-    </key>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
-  <component name="RunDashboard">
-    <option name="configurationTypes">
-      <set>
-        <option value="JarApplication" />
-        <option value="MavenRunConfiguration" />
-      </set>
-    </option>
-    <option name="excludedTypes">
-      <set>
-        <option value="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" />
-      </set>
-    </option>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Unnamed" type="Remote" nameIsGenerated="true">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="6666" />
-      <option name="AUTO_RESTART" value="false" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="6666" />
-        <option name="LOCAL" value="false" />
-      </RunnerSettings>
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-      <option name="AUTO_RESTART" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.0.21" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="UPDATING_POLICY" value="restart-server" />
-      <deployment />
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="_user-platform" />
-      </server-settings>
-      <predefined_log_file enabled="true" id="Tomcat" />
-      <predefined_log_file enabled="true" id="Tomcat Catalina" />
-      <predefined_log_file id="Tomcat Manager" />
-      <predefined_log_file id="Tomcat Host Manager" />
-      <predefined_log_file id="Tomcat Localhost Access" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="2684" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="JRebel Debug">
-        <option name="DEBUG_PORT" value="2685" />
-      </RunnerSettings>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="JRebel Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="JRebel Executor">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2f0d358d-8e26-41de-a6be-ad4fceb35195" name="Default Changelist" comment="" />
-      <created>1614263597176</created>
+      <changelist id="168e1800-eac3-4390-ae69-23cee86f2418" name="Default Changelist" comment="" />
+      <created>1614568757163</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1614263597176</updated>
-      <workItem from="1614263598534" duration="3442000" />
-      <workItem from="1614268936400" duration="805000" />
-      <workItem from="1614269750246" duration="317000" />
-      <workItem from="1614351042446" duration="54000" />
-      <workItem from="1614428142340" duration="3041000" />
-      <workItem from="1614487081974" duration="8369000" />
-      <workItem from="1614506912385" duration="18175000" />
+      <updated>1614568757163</updated>
+      <workItem from="1614568759406" duration="158000" />
+      <workItem from="1614568998436" duration="3550000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -306,132 +417,13 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="440" y="99" key="#Project_Structure" timestamp="1614269614915">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state x="2528" y="246" key="RollbackChangesDialog" timestamp="1614568872796">
+      <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state x="440" y="99" key="#Project_Structure/0.0.1920.1050/-2560.0.2560.1410@0.0.1920.1050" timestamp="1614269614915" />
-    <state x="873" y="483" key="#TomEE_Server" timestamp="1614508609228">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state x="2528" y="246" key="RollbackChangesDialog/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1614568872796" />
+    <state x="2411" y="169" key="SettingsEditor" timestamp="1614575758402">
+      <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state x="873" y="483" key="#TomEE_Server/0.0.1920.1050/-2560.0.2560.1410@0.0.1920.1050" timestamp="1614508609228" />
-    <state x="872" y="483" key="#Tomcat_Server" timestamp="1614508659491">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="872" y="483" key="#Tomcat_Server/0.0.1920.1050/-2560.0.2560.1410@0.0.1920.1050" timestamp="1614508659491" />
-    <state x="552" y="59" width="1092" height="991" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1614527157976">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="552" y="59" width="1092" height="991" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050/-2560.0.2560.1410@0.0.1920.1050" timestamp="1614527157976" />
-    <state x="765" y="228" key="#com.intellij.ide.util.MemberChooser" timestamp="1614521669522">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="765" y="228" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050/-2560.0.2560.1410@0.0.1920.1050" timestamp="1614521669522" />
-    <state x="821" y="258" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1614508613123">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="821" y="258" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.0.1920.1050/-2560.0.2560.1410@0.0.1920.1050" timestamp="1614508613123" />
-    <state x="717" y="389" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1614507657897">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="717" y="389" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1050/-2560.0.2560.1410@0.0.1920.1050" timestamp="1614507657897" />
-    <state x="184" y="86" key="DiffContextDialog" timestamp="1614269065226">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="184" y="86" key="DiffContextDialog/0.0.1920.1050/-2560.0.2560.1410@0.0.1920.1050" timestamp="1614269065226" />
-    <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1614508658718">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050/-2560.0.2560.1410@0.0.1920.1050" timestamp="1614508658718" />
-    <state width="1877" height="298" key="GridCell.Tab.0.bottom" timestamp="1614528744211">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="298" key="GridCell.Tab.0.bottom/0.0.1920.1050/-2560.0.2560.1410@0.0.1920.1050" timestamp="1614528744211" />
-    <state width="1877" height="298" key="GridCell.Tab.0.center" timestamp="1614528744210">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="298" key="GridCell.Tab.0.center/0.0.1920.1050/-2560.0.2560.1410@0.0.1920.1050" timestamp="1614528744210" />
-    <state width="1877" height="298" key="GridCell.Tab.0.left" timestamp="1614528744210">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="298" key="GridCell.Tab.0.left/0.0.1920.1050/-2560.0.2560.1410@0.0.1920.1050" timestamp="1614528744210" />
-    <state width="1877" height="298" key="GridCell.Tab.0.right" timestamp="1614528744211">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="298" key="GridCell.Tab.0.right/0.0.1920.1050/-2560.0.2560.1410@0.0.1920.1050" timestamp="1614528744211" />
-    <state width="1877" height="579" key="GridCell.Tab.1.bottom" timestamp="1614527160474">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="579" key="GridCell.Tab.1.bottom/0.0.1920.1050/-2560.0.2560.1410@0.0.1920.1050" timestamp="1614527160474" />
-    <state width="1877" height="579" key="GridCell.Tab.1.center" timestamp="1614527160474">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="579" key="GridCell.Tab.1.center/0.0.1920.1050/-2560.0.2560.1410@0.0.1920.1050" timestamp="1614527160474" />
-    <state width="1877" height="579" key="GridCell.Tab.1.left" timestamp="1614527160474">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="579" key="GridCell.Tab.1.left/0.0.1920.1050/-2560.0.2560.1410@0.0.1920.1050" timestamp="1614527160474" />
-    <state width="1877" height="579" key="GridCell.Tab.1.right" timestamp="1614527160474">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="579" key="GridCell.Tab.1.right/0.0.1920.1050/-2560.0.2560.1410@0.0.1920.1050" timestamp="1614527160474" />
-    <state width="1877" height="579" key="GridCell.Tab.2.bottom" timestamp="1614527160474">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="579" key="GridCell.Tab.2.bottom/0.0.1920.1050/-2560.0.2560.1410@0.0.1920.1050" timestamp="1614527160474" />
-    <state width="1877" height="579" key="GridCell.Tab.2.center" timestamp="1614527160474">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="579" key="GridCell.Tab.2.center/0.0.1920.1050/-2560.0.2560.1410@0.0.1920.1050" timestamp="1614527160474" />
-    <state width="1877" height="579" key="GridCell.Tab.2.left" timestamp="1614527160474">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="579" key="GridCell.Tab.2.left/0.0.1920.1050/-2560.0.2560.1410@0.0.1920.1050" timestamp="1614527160474" />
-    <state width="1877" height="579" key="GridCell.Tab.2.right" timestamp="1614527160474">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="579" key="GridCell.Tab.2.right/0.0.1920.1050/-2560.0.2560.1410@0.0.1920.1050" timestamp="1614527160474" />
-    <state x="606" y="245" key="RollbackChangesDialog" timestamp="1614269066229">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="606" y="245" key="RollbackChangesDialog/0.0.1920.1050/-2560.0.2560.1410@0.0.1920.1050" timestamp="1614269066229" />
-    <state x="461" y="169" width="1156" height="852" key="SettingsEditor" timestamp="1614521316009">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="461" y="169" width="1156" height="852" key="SettingsEditor/0.0.1920.1050/-2560.0.2560.1410@0.0.1920.1050" timestamp="1614521316009" />
-    <state x="552" y="257" key="Vcs.Push.Dialog.v2" timestamp="1614528940937">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="552" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-2560.0.2560.1410@0.0.1920.1050" timestamp="1614528940937" />
-    <state x="762" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1614528942609">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="762" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050/-2560.0.2560.1410@0.0.1920.1050" timestamp="1614528942609" />
-    <state width="363" height="352" key="documentation.popup.size" timestamp="1614521829495">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="363" height="352" key="documentation.popup.size/0.0.1920.1050/-2560.0.2560.1410@0.0.1920.1050" timestamp="1614521829495" />
-    <state x="663" y="261" width="631" height="528" key="find.popup" timestamp="1614526853404">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="663" y="261" width="631" height="528" key="find.popup/0.0.1920.1050/-2560.0.2560.1410@0.0.1920.1050" timestamp="1614526853404" />
-    <state x="657" y="281" key="refactoring.ChangeSignatureDialog" timestamp="1614524586360">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="657" y="281" key="refactoring.ChangeSignatureDialog/0.0.1920.1050/-2560.0.2560.1410@0.0.1920.1050" timestamp="1614524586360" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1614502618933">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050/-2560.0.2560.1410@0.0.1920.1050" timestamp="1614502618933" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/user-web/src/main/webapp/login-form.jsp</url>
-          <line>31</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="2411" y="169" key="SettingsEditor/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1614575758402" />
   </component>
 </project>

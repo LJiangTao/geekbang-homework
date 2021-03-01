@@ -2,8 +2,9 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="homework" target="8" />
+      <module name="lesson_1" target="8" />
       <module name="my-web-mvc" target="8" />
-      <module name="user-platform" target="8" />
       <module name="user-web" target="8" />
     </bytecodeTargetLevel>
   </component>

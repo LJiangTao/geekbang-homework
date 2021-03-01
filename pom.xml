@@ -5,18 +5,18 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.geekbang.projects</groupId>
-    <artifactId>user-platform</artifactId>
-    <name>User Platform ${revision}</name>
+    <artifactId>homework</artifactId>
+    <name>ROOT</name>
     <version>${revision}</version>
     <packaging>pom</packaging>
 
     <modules>
-        <module>my-web-mvc</module>
-        <module>user-web</module>
+        <module>lesson_1</module>
     </modules>
 
     <properties>
         <revision>v1-SNAPSHOT</revision>
+        <lesson.one.artifact>lesson-one</lesson.one.artifact>
         <file.encoding>UTF-8</file.encoding>
         <project.build.sourceEncoding>${file.encoding}</project.build.sourceEncoding>
 

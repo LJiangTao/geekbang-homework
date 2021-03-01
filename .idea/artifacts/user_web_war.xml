@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
-  <artifact type="war" build-on-make="true" name="user-web:war">
-    <output-path>$PROJECT_DIR$/user-web/target</output-path>
+  <artifact type="war" name="user-web:war">
+    <output-path>$PROJECT_DIR$/lesson_1/user-web/target</output-path>
     <properties id="maven-jee-properties">
       <options>
         <module>user-web</module>
