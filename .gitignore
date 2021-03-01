@@ -207,6 +207,7 @@ hs_err_pid*
 
 .log
 
+.extract
 .war
 */target/
 

@@ -36,6 +36,6 @@ public class UserService implements org.geektimes.projects.user.service.UserServ
 
     @Override
     public User queryUserByNameAndPassword(String name, String password) {
-        return null;
+       return repository.getByNameAndPassword(name, password);
     }
 }

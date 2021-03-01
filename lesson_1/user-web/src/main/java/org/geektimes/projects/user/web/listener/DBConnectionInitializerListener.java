@@ -16,7 +16,7 @@ public class DBConnectionInitializerListener implements ServletContextListener {
 
     private final Logger log = Logger.getLogger("DBConnectionInitializerListener");
 
-    @Resource(name = "jdbc/UserPlatformDB")
+    @Resource(name = "jdbc/registerPlatformDB")
     private DataSource dataSource;
 
     @Override
