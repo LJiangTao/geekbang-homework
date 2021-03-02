@@ -78,7 +78,7 @@ public class DatabaseUserRepository implements UserRepository {
 
     @Override
     public User getByNameAndPassword(String userName, String password) {
-        return executeQuery("SELECT id,name,password FROM users WHERE name=? and password=?",
+        return executeQuery("SELECT id,name,password FROM users WHERE name= ? and password= ?",
                 resultSet -> {
                     List<User> users = convert(resultSet);
                     if (users.isEmpty()) return null;
@@ -151,6 +151,7 @@ public class DatabaseUserRepository implements UserRepository {
                 // 以 id 为例，  user.setId(resultSet.getLong("id"));
                 setterMethodFromUser.invoke(user, resultValue);
             }
+            users.add(user);
         }
         return users;
     }
