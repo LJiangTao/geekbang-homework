@@ -18,6 +18,10 @@
         </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
+    
+    <listener>
+        <listener-class>org.geektimes.projects.user.web.listener.DBConnectionInitializerListener</listener-class>
+    </listener>
 
     <!-- The mapping for the default servlet -->
     <servlet-mapping>
@@ -106,9 +110,15 @@
 
     <resource-ref>
         <description>DB Connection</description>
-        <res-ref-name>jdbc/registerPlatformDB</res-ref-name>
+        <res-ref-name>jdbc/user-platform</res-ref-name>
         <res-type>javax.sql.DataSource</res-type>
         <res-auth>Container</res-auth>
     </resource-ref>
 
+    <resource-ref>
+        <description>        </description>
+        <res-ref-name>jdbc/EmployeeDB</res-ref-name>
+        <res-type>javax.sql.DataSource</res-type>
+        <res-auth>Container</res-auth>
+    </resource-ref>
 </web-app>

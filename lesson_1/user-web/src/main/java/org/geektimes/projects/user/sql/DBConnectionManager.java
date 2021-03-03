@@ -1,12 +1,9 @@
 package org.geektimes.projects.user.sql;
 
-import org.geektimes.projects.user.domain.User;
-
-import java.beans.BeanInfo;
-import java.beans.Introspector;
-import java.beans.PropertyDescriptor;
-import java.lang.reflect.Method;
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.logging.Level;
@@ -18,20 +15,24 @@ public class DBConnectionManager {
 
     private Connection connection;
 
-    private final static DBConnectionManager instance = new DBConnectionManager();
+    private static volatile DBConnectionManager instance;
 
     public void setConnection(Connection connection) {
         this.connection = connection;
     }
 
     public synchronized static DBConnectionManager getInstance() {
+        if (instance == null) {
+            instance = new DBConnectionManager();
+            return instance;
+        }
         return instance;
     }
 
     private DBConnectionManager() {
         String dbUrl = "jdbc:derby:/db/user-platform;create=true";
         try {
-            this.connection =  DriverManager.getConnection(dbUrl);
+            this.connection = DriverManager.getConnection(dbUrl);
             PreparedStatement DROP = connection.prepareStatement(DROP_USERS_TABLE_DDL_SQL);
             DROP.execute();
             PreparedStatement CREATE = connection.prepareStatement(CREATE_USERS_TABLE_DDL_SQL);
