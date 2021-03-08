@@ -3,7 +3,7 @@ package org.geektimes.projects.user.web.controller;
 
 import org.apache.commons.lang.StringUtils;
 import org.geektimes.projects.user.domain.User;
-import org.geektimes.projects.user.web.services.UserService;
+import org.geektimes.projects.user.service.UserServiceImpl;
 import org.geektimes.web.mvc.controller.PageController;
 
 import javax.servlet.http.HttpServletRequest;
@@ -19,7 +19,7 @@ import java.util.logging.Logger;
 @Path("/register")
 public class AuthenticationController implements PageController {
 
-    private static final UserService userService = new UserService();
+    private static final UserServiceImpl USER_SERVICE_IMPL = new UserServiceImpl();
 
     private static final Logger log = Logger.getLogger("AuthenticationController");
 
@@ -34,7 +34,7 @@ public class AuthenticationController implements PageController {
             return "register-form.jsp";
         }
 
-        if (userService.register(new User(user, password))) {
+        if (USER_SERVICE_IMPL.register(new User(user, password))) {
             return "login-form.jsp";
         }
         return "register-form.jsp";

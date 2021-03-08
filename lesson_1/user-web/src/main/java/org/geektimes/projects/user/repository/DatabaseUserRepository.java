@@ -1,5 +1,6 @@
 package org.geektimes.projects.user.repository;
 
+import org.geektimes.context.ComponentContext;
 import org.geektimes.function.ThrowableFunction;
 import org.geektimes.projects.user.domain.User;
 import org.geektimes.projects.user.sql.DBConnectionManager;
@@ -20,22 +21,22 @@ import static org.apache.commons.lang.ClassUtils.wrapperToPrimitive;
 
 public class DatabaseUserRepository implements UserRepository {
 
+
     private static Logger logger = Logger.getLogger(DatabaseUserRepository.class.getName());
+    public static final String INSERT_USER_DML_SQL = "INSERT INTO users(name,password) VALUES (?,?)";
+    public static final String QUERY_ALL_USERS_DML_SQL = "SELECT id,name,password FROM users";
+    private final DBConnectionManager dbConnectionManager;
+
+
+    public DatabaseUserRepository() {
+        this.dbConnectionManager = ComponentContext.getInstance().getComponent("bean/DBConnectionManager");
+    }
 
     /**
      * 通用处理方式
      */
     private static Consumer<Throwable> COMMON_EXCEPTION_HANDLER = e -> logger.log(Level.SEVERE, e.getMessage());
 
-    public static final String INSERT_USER_DML_SQL = "INSERT INTO users(name,password) VALUES (?,?)";
-
-    public static final String QUERY_ALL_USERS_DML_SQL = "SELECT id,name,password FROM users";
-
-    private final DBConnectionManager dbConnectionManager;
-
-    public DatabaseUserRepository(DBConnectionManager dbConnectionManager) {
-        this.dbConnectionManager = dbConnectionManager;
-    }
 
     private Connection getConnection() {
         return dbConnectionManager.getConnection();
@@ -116,7 +117,7 @@ public class DatabaseUserRepository implements UserRepository {
 
                 // Boolean -> boolean
                 String methodName = preparedStatementMethodMappings.get(argType);
-                Method method = PreparedStatement.class.getMethod(methodName,  int.class, wrapperType);
+                Method method = PreparedStatement.class.getMethod(methodName, int.class, wrapperType);
                 method.invoke(preparedStatement, i + 1, args[i]);
             }
             ResultSet resultSet = preparedStatement.executeQuery();

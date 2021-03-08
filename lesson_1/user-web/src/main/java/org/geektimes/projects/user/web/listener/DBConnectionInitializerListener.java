@@ -15,6 +15,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 @WebListener
+@Deprecated
 public class DBConnectionInitializerListener implements ServletContextListener {
 
     private final Logger log = Logger.getLogger("DBConnectionInitializerListener");
@@ -36,24 +37,10 @@ public class DBConnectionInitializerListener implements ServletContextListener {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
-
-        DBConnectionManager instance = DBConnectionManager.getInstance();
-        if (instance != null)
-            try {
-
-                instance.setConnection(dataSource.getConnection());
-                System.out.println("NDI datasource getConnection success !");
-                log.log(Level.FINE, "JNDI datasource getConnection success !");
-            } catch (SQLException throwables) {
-                log.log(Level.SEVERE, "JNDI datasource getConnection failure !");
-                throwables.printStackTrace();
-            }
     }
 
     @Override
     public void contextDestroyed(ServletContextEvent sce) {
-        DBConnectionManager instance = DBConnectionManager.getInstance();
-        instance.releaseConnection();
+
     }
 }

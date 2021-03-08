@@ -15,34 +15,22 @@ public class DBConnectionManager {
 
     private Connection connection;
 
-    private static volatile DBConnectionManager instance;
+    public DBConnectionManager(){}
 
-    public void setConnection(Connection connection) {
-        this.connection = connection;
-    }
-
-    public synchronized static DBConnectionManager getInstance() {
-        if (instance == null) {
-            instance = new DBConnectionManager();
-            return instance;
-        }
-        return instance;
-    }
-
-    private DBConnectionManager() {
-        String dbUrl = "jdbc:derby:/db/user-platform;create=true";
-        try {
-            this.connection = DriverManager.getConnection(dbUrl);
-            PreparedStatement DROP = connection.prepareStatement(DROP_USERS_TABLE_DDL_SQL);
-            DROP.execute();
-            PreparedStatement CREATE = connection.prepareStatement(CREATE_USERS_TABLE_DDL_SQL);
-            CREATE.execute();
-            logger.log(Level.INFO, "DB IS READY");
-        } catch (SQLException throwables) {
-            logger.log(Level.SEVERE, "DbManager create Connection failure see blow stacks");
-            throwables.printStackTrace();
-        }
-    }
+  public void initDb(){
+      String dbUrl = "jdbc:derby:/db/user-platform;create=true";
+      try {
+          this.connection = DriverManager.getConnection(dbUrl);
+          PreparedStatement DROP = connection.prepareStatement(DROP_USERS_TABLE_DDL_SQL);
+          DROP.execute();
+          PreparedStatement CREATE = connection.prepareStatement(CREATE_USERS_TABLE_DDL_SQL);
+          CREATE.execute();
+          logger.log(Level.INFO, "DB IS READY");
+      } catch (SQLException throwables) {
+          logger.log(Level.SEVERE, "DbManager create Connection failure see blow stacks");
+          throwables.printStackTrace();
+      }
+  }
 
     public Connection getConnection() {
         return this.connection;

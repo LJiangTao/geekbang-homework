@@ -1,18 +1,27 @@
-package org.geektimes.projects.user.web.services;
+package org.geektimes.projects.user.service;
 
+import org.geektimes.context.ComponentContext;
 import org.geektimes.projects.user.domain.User;
 import org.geektimes.projects.user.repository.DatabaseUserRepository;
 import org.geektimes.projects.user.sql.DBConnectionManager;
 
+import javax.annotation.Resource;
+import javax.persistence.EntityManager;
+import javax.validation.Validator;
 import javax.xml.crypto.Data;
 
-public class UserService implements org.geektimes.projects.user.service.UserService {
+public class UserServiceImpl implements org.geektimes.projects.user.service.UserService {
 
-    private static final DatabaseUserRepository repository;
 
-    static {
-        repository = new DatabaseUserRepository(DBConnectionManager.getInstance());
-    }
+    @Resource(name = "bean/EntityManager")
+    private EntityManager entityManager;
+
+    @Resource(name = "bean/Validator")
+    private Validator validator;
+
+    @Resource(name = "name/DbUserRepository")
+    private DatabaseUserRepository repository;
+
 
     @Override
     public boolean register(User user) {
