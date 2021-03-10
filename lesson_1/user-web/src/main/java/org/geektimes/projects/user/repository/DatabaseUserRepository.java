@@ -5,6 +5,7 @@ import org.geektimes.function.ThrowableFunction;
 import org.geektimes.projects.user.domain.User;
 import org.geektimes.projects.user.sql.DBConnectionManager;
 
+import javax.annotation.PostConstruct;
 import java.beans.BeanInfo;
 import java.beans.Introspector;
 import java.beans.PropertyDescriptor;
@@ -21,161 +22,169 @@ import static org.apache.commons.lang.ClassUtils.wrapperToPrimitive;
 
 public class DatabaseUserRepository implements UserRepository {
 
+  public static final String INSERT_USER_DML_SQL =
+      "INSERT INTO users(name,password,phone) VALUES (?,?,?)";
+  public static final String QUERY_ALL_USERS_DML_SQL = "SELECT id,name,password FROM users";
+  /** 数据类型与 ResultSet 方法名映射 */
+  static Map<Class, String> resultSetMethodMappings = new HashMap<>();
 
-    private static Logger logger = Logger.getLogger(DatabaseUserRepository.class.getName());
-    public static final String INSERT_USER_DML_SQL = "INSERT INTO users(name,password) VALUES (?,?)";
-    public static final String QUERY_ALL_USERS_DML_SQL = "SELECT id,name,password FROM users";
-    private final DBConnectionManager dbConnectionManager;
+  static Map<Class, String> preparedStatementMethodMappings = new HashMap<>();
+  private static Logger logger = Logger.getLogger(DatabaseUserRepository.class.getName());
+  /** 通用处理方式 */
+  private static Consumer<Throwable> COMMON_EXCEPTION_HANDLER =
+      e -> logger.log(Level.SEVERE, e.getMessage());
 
+  static {
+    resultSetMethodMappings.put(Long.class, "getLong");
+    resultSetMethodMappings.put(String.class, "getString");
 
-    public DatabaseUserRepository() {
-        this.dbConnectionManager = ComponentContext.getInstance().getComponent("bean/DBConnectionManager");
+    preparedStatementMethodMappings.put(Long.class, "setLong"); // long
+    preparedStatementMethodMappings.put(String.class, "setString"); //
+  }
+
+  private  DBConnectionManager dbConnectionManager;
+
+  @PostConstruct
+  public void DatabaseUserRepository() {
+    this.dbConnectionManager =
+        ComponentContext.getInstance().getComponent("bean/DBConnectionManager");
+  }
+
+  private static String mapColumnLabel(String fieldName) {
+    return fieldName;
+  }
+
+  private Connection getConnection() {
+    return dbConnectionManager.getConnection();
+  }
+
+  @Override
+  public boolean save(User user) {
+    try {
+
+      Connection connection = getConnection();
+      PreparedStatement preparedStatement = connection.prepareStatement(INSERT_USER_DML_SQL);
+      preparedStatement.setString(1, user.getName());
+      preparedStatement.setString(2, user.getPassword());
+      preparedStatement.setString(3, Optional.ofNullable(user.getPhone()).orElse(""));
+      preparedStatement.execute();
+      return true;
+    } catch (Exception throwables) {
+      return false;
     }
+  }
 
-    /**
-     * 通用处理方式
-     */
-    private static Consumer<Throwable> COMMON_EXCEPTION_HANDLER = e -> logger.log(Level.SEVERE, e.getMessage());
+  @Override
+  public boolean deleteById(Long userId) {
+    return false;
+  }
 
+  @Override
+  public boolean update(User user) {
+    return false;
+  }
 
-    private Connection getConnection() {
-        return dbConnectionManager.getConnection();
-    }
+  @Override
+  public User getById(Long userId) {
+    String sql = QUERY_ALL_USERS_DML_SQL + " WHERE id = ?";
+    return executeQuery(
+        sql,
+        resultSet -> {
+          List<User> users = convert(resultSet);
+          if (users.isEmpty()) return null;
+          return users.stream().findFirst().orElse(null);
+        },
+        e -> {},
+        userId);
+  }
 
-    @Override
-    public boolean save(User user) {
-        try {
-            Connection connection = getConnection();
-            PreparedStatement preparedStatement = connection.prepareStatement(INSERT_USER_DML_SQL);
-            preparedStatement.setString(1, user.getName());
-            preparedStatement.setString(2, user.getPassword());
-            preparedStatement.execute();
-            return true;
-        } catch (Exception throwables) {
-            return false;
-        }
-    }
+  @Override
+  public User getByNameAndPassword(String userName, String password) {
+    return executeQuery(
+        "SELECT id,name,password FROM users WHERE name= ? and password= ?",
+        resultSet -> {
+          List<User> users = convert(resultSet);
+          if (users.isEmpty()) return null;
+          return users.stream().findFirst().orElse(null);
+        },
+        COMMON_EXCEPTION_HANDLER,
+        userName,
+        password);
+  }
 
-    @Override
-    public boolean deleteById(Long userId) {
-        return false;
-    }
-
-    @Override
-    public boolean update(User user) {
-        return false;
-    }
-
-    @Override
-    public User getById(Long userId) {
-        String sql = QUERY_ALL_USERS_DML_SQL + " WHERE id = ?";
-        return executeQuery(sql, resultSet -> {
-            List<User> users = convert(resultSet);
-            if (users.isEmpty()) return null;
-            return users.stream().findFirst().orElse(null);
-        }, e -> {
-        }, userId);
-    }
-
-    @Override
-    public User getByNameAndPassword(String userName, String password) {
-        return executeQuery("SELECT id,name,password FROM users WHERE name= ? and password= ?",
-                resultSet -> {
-                    List<User> users = convert(resultSet);
-                    if (users.isEmpty()) return null;
-                    return users.stream().findFirst().orElse(null);
-                }, COMMON_EXCEPTION_HANDLER, userName, password);
-    }
-
-    @Override
-    public Collection<User> getAll() {
-        return executeQuery("SELECT id,name,password FROM users", this::convert, e -> {
-            // 异常处理
+  @Override
+  public Collection<User> getAll() {
+    return executeQuery(
+        "SELECT id,name,password FROM users",
+        this::convert,
+        e -> {
+          // 异常处理
         });
-    }
+  }
 
-    /**
-     * @param sql
-     * @param function
-     * @param <T>
-     * @return
-     */
-    protected <T> T executeQuery(String sql, ThrowableFunction<ResultSet, T> function,
-                                 Consumer<Throwable> exceptionHandler, Object... args) {
-        Connection connection = getConnection();
-        try {
-            PreparedStatement preparedStatement = connection.prepareStatement(sql);
-            for (int i = 0; i < args.length; i++) {
-                Object arg = args[i];
-                Class argType = arg.getClass();
+  /**
+   * @param sql
+   * @param function
+   * @param <T>
+   * @return
+   */
+  protected <T> T executeQuery(
+      String sql,
+      ThrowableFunction<ResultSet, T> function,
+      Consumer<Throwable> exceptionHandler,
+      Object... args) {
+    Connection connection = getConnection();
+    try {
+      PreparedStatement preparedStatement = connection.prepareStatement(sql);
+      for (int i = 0; i < args.length; i++) {
+        Object arg = args[i];
+        Class argType = arg.getClass();
 
-                Class wrapperType = wrapperToPrimitive(argType);
+        Class wrapperType = wrapperToPrimitive(argType);
 
-                if (wrapperType == null) {
-                    wrapperType = argType;
-                }
-
-                // Boolean -> boolean
-                String methodName = preparedStatementMethodMappings.get(argType);
-                Method method = PreparedStatement.class.getMethod(methodName, int.class, wrapperType);
-                method.invoke(preparedStatement, i + 1, args[i]);
-            }
-            ResultSet resultSet = preparedStatement.executeQuery();
-            // 返回一个 POJO List -> ResultSet -> POJO List
-            // ResultSet -> T
-            return function.apply(resultSet);
-        } catch (Throwable e) {
-            exceptionHandler.accept(e);
+        if (wrapperType == null) {
+          wrapperType = argType;
         }
-        return null;
+
+        // Boolean -> boolean
+        String methodName = preparedStatementMethodMappings.get(argType);
+        Method method = PreparedStatement.class.getMethod(methodName, int.class, wrapperType);
+        method.invoke(preparedStatement, i + 1, args[i]);
+      }
+      ResultSet resultSet = preparedStatement.executeQuery();
+      // 返回一个 POJO List -> ResultSet -> POJO List
+      // ResultSet -> T
+      return function.apply(resultSet);
+    } catch (Throwable e) {
+      exceptionHandler.accept(e);
     }
+    return null;
+  }
 
-    private List<User> convert(ResultSet resultSet) throws Exception {
-        // BeanInfo -> IntrospectionException
-        BeanInfo userBeanInfo = Introspector.getBeanInfo(User.class, Object.class);
-        List<User> users = new ArrayList<>();
-        while (resultSet.next()) { // 如果存在并且游标滚动 // SQLException
-            User user = new User();
-            for (PropertyDescriptor propertyDescriptor : userBeanInfo.getPropertyDescriptors()) {
-                String fieldName = propertyDescriptor.getName();
-                Class fieldType = propertyDescriptor.getPropertyType();
-                String methodName = resultSetMethodMappings.get(fieldType);
-                // 可能存在映射关系（不过此处是相等的）
-                String columnLabel = mapColumnLabel(fieldName);
-                Method resultSetMethod = ResultSet.class.getMethod(methodName, String.class);
-                // 通过放射调用 getXXX(String) 方法
-                Object resultValue = resultSetMethod.invoke(resultSet, columnLabel);
-                // 获取 User 类 Setter方法
-                // PropertyDescriptor ReadMethod 等于 Getter 方法
-                // PropertyDescriptor WriteMethod 等于 Setter 方法
-                Method setterMethodFromUser = propertyDescriptor.getWriteMethod();
-                // 以 id 为例，  user.setId(resultSet.getLong("id"));
-                setterMethodFromUser.invoke(user, resultValue);
-            }
-            users.add(user);
-        }
-        return users;
+  private List<User> convert(ResultSet resultSet) throws Exception {
+    // BeanInfo -> IntrospectionException
+    BeanInfo userBeanInfo = Introspector.getBeanInfo(User.class, Object.class);
+    List<User> users = new ArrayList<>();
+    while (resultSet.next()) { // 如果存在并且游标滚动 // SQLException
+      User user = new User();
+      for (PropertyDescriptor propertyDescriptor : userBeanInfo.getPropertyDescriptors()) {
+        String fieldName = propertyDescriptor.getName();
+        Class fieldType = propertyDescriptor.getPropertyType();
+        String methodName = resultSetMethodMappings.get(fieldType);
+        // 可能存在映射关系（不过此处是相等的）
+        String columnLabel = mapColumnLabel(fieldName);
+        Method resultSetMethod = ResultSet.class.getMethod(methodName, String.class);
+        // 通过放射调用 getXXX(String) 方法
+        Object resultValue = resultSetMethod.invoke(resultSet, columnLabel);
+        // 获取 User 类 Setter方法
+        // PropertyDescriptor ReadMethod 等于 Getter 方法
+        // PropertyDescriptor WriteMethod 等于 Setter 方法
+        Method setterMethodFromUser = propertyDescriptor.getWriteMethod();
+        // 以 id 为例，  user.setId(resultSet.getLong("id"));
+        setterMethodFromUser.invoke(user, resultValue);
+      }
+      users.add(user);
     }
-
-
-    private static String mapColumnLabel(String fieldName) {
-        return fieldName;
-    }
-
-    /**
-     * 数据类型与 ResultSet 方法名映射
-     */
-    static Map<Class, String> resultSetMethodMappings = new HashMap<>();
-
-    static Map<Class, String> preparedStatementMethodMappings = new HashMap<>();
-
-    static {
-        resultSetMethodMappings.put(Long.class, "getLong");
-        resultSetMethodMappings.put(String.class, "getString");
-
-        preparedStatementMethodMappings.put(Long.class, "setLong"); // long
-        preparedStatementMethodMappings.put(String.class, "setString"); //
-
-
-    }
+    return users;
+  }
 }

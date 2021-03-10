@@ -30,6 +30,9 @@
                 <td>密码：<input name="password" type="password"></td>
             </tr>
             <tr>
+                <td>手机号：<input name="phone" type="number"></td>
+            </tr>
+            <tr>
                 <td><input name="submit" type="submit" value="提交"></td>
             </tr>
         </table>

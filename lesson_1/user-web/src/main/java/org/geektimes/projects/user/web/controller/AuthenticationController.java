@@ -6,6 +6,7 @@ import org.geektimes.projects.user.domain.User;
 import org.geektimes.projects.user.service.UserServiceImpl;
 import org.geektimes.web.mvc.controller.PageController;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.ws.rs.POST;
@@ -19,7 +20,7 @@ import java.util.logging.Logger;
 @Path("/register")
 public class AuthenticationController implements PageController {
 
-    private static final UserServiceImpl USER_SERVICE_IMPL = new UserServiceImpl();
+    private UserServiceImpl userService = new UserServiceImpl();
 
     private static final Logger log = Logger.getLogger("AuthenticationController");
 
@@ -29,12 +30,13 @@ public class AuthenticationController implements PageController {
 
         String user = request.getParameter("username");
         String password = request.getParameter("password");
+        String phone = request.getParameter("phone");
         log.log(Level.INFO, String.format("username: %s, password: %s", user, password));
         if (StringUtils.isBlank(user) && StringUtils.isBlank(password)) {
             return "register-form.jsp";
         }
 
-        if (USER_SERVICE_IMPL.register(new User(user, password))) {
+        if (userService.register(new User(user, password, phone))) {
             return "login-form.jsp";
         }
         return "register-form.jsp";
