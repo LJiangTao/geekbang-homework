@@ -1,0 +1,4 @@
+<Context>
+    <Parameter name="maxDepth" value="1"/>
+    <Parameter name="discoveryEnable" value="enable"/>
+</Context>

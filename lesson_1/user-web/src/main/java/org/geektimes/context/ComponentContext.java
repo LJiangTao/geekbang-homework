@@ -2,12 +2,17 @@ package org.geektimes.context;
 
 import org.geektimes.function.ThrowableAction;
 import org.geektimes.function.ThrowableFunction;
+import org.geektimes.mbean.CustomApplicationName;
+import org.geektimes.mbean.CustomManager;
+import org.geektimes.mbean.ICustomManagerMBean;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 import javax.annotation.Resource;
+import javax.management.*;
 import javax.naming.*;
 import javax.servlet.ServletContext;
+import java.lang.management.ManagementFactory;
 import java.lang.reflect.Modifier;
 import java.util.*;
 import java.util.logging.Logger;
@@ -64,6 +69,7 @@ public class ComponentContext {
         initEnvContext();
         instantiateComponents();
         initializeComponents();
+        initModelBean();
     }
 
     /**
@@ -250,5 +256,19 @@ public class ComponentContext {
         } finally {
             close(context);
         }
+    }
+
+    private void initModelBean() {
+        try {
+            MBeanServer server = ManagementFactory.getPlatformMBeanServer();
+
+            ObjectName objectName = new ObjectName("org.geektimes.projects.custom.management:type=CustomManager");
+            CustomManager bean = new CustomManager(new CustomApplicationName());
+            server.registerMBean(new StandardMBean(bean, ICustomManagerMBean.class), objectName);
+
+        } catch (MalformedObjectNameException | NotCompliantMBeanException | InstanceAlreadyExistsException | MBeanRegistrationException e) {
+            e.printStackTrace();
+        }
+
     }
 }
