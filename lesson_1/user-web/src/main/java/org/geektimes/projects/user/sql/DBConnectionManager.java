@@ -12,7 +12,7 @@ import java.util.logging.Logger;
 
 public class DBConnectionManager {
 
-  public static final String DROP_USERS_TABLE_DDL_SQL = "DROP TABLE users";
+  public static final String DROP_USERS_TABLE_DDL_SQL = "DROP TABLE IF EXISTS users";
   public static final String CREATE_USERS_TABLE_DDL_SQL =
       "CREATE TABLE users("
           + "id INT NOT NULL PRIMARY KEY GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1), "
@@ -49,10 +49,10 @@ public class DBConnectionManager {
     String dbUrl = "jdbc:derby:/db/user-platform;create=true";
     try {
       this.connection = DriverManager.getConnection(dbUrl);
-      PreparedStatement DROP = connection.prepareStatement(DROP_USERS_TABLE_DDL_SQL);
-      DROP.execute();
-      PreparedStatement CREATE = connection.prepareStatement(CREATE_USERS_TABLE_DDL_SQL);
-      CREATE.execute();
+//      PreparedStatement DROP = connection.prepareStatement(DROP_USERS_TABLE_DDL_SQL);
+//      DROP.execute();
+//      PreparedStatement CREATE = connection.prepareStatement(CREATE_USERS_TABLE_DDL_SQL);
+//      CREATE.execute();
       logger.log(Level.INFO, "DB IS READY");
     } catch (SQLException throwables) {
       logger.log(Level.SEVERE, "DbManager create Connection failure see blow stacks");

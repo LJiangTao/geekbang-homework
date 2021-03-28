@@ -16,6 +16,8 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>configuration</module>
+        <module>injection-dependency</module>
         <module>my-web-mvc</module>
         <module>user-web</module>
     </modules>

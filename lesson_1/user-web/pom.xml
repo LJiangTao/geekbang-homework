@@ -14,6 +14,10 @@
     <name>User Web Application ${revision}</name>
     <packaging>war</packaging>
 
+    <properties>
+        <injection.dependency.version>v1-SNAPSHOT</injection.dependency.version>
+    </properties>
+
 
     <dependencies>
         <dependency>
@@ -82,6 +86,17 @@
             <artifactId>jolokia-client-java</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>org.geekbang.projects</groupId>
+            <artifactId>injection-dependency</artifactId>
+            <version>${injection.dependency.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.geekbang.projects</groupId>
+            <artifactId>my-configuration</artifactId>
+            <version>v1-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
     <build>

@@ -7,6 +7,7 @@ import org.geektimes.projects.user.service.UserServiceImpl;
 import org.geektimes.web.mvc.controller.PageController;
 
 import javax.annotation.Resource;
+import javax.annotation.Resources;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.ws.rs.POST;
@@ -20,7 +21,8 @@ import java.util.logging.Logger;
 @Path("/register")
 public class AuthenticationController implements PageController {
 
-    private UserServiceImpl userService = new UserServiceImpl();
+    @Resource(name = "bean/UserService")
+    private UserServiceImpl userService;
 
     private static final Logger log = Logger.getLogger("AuthenticationController");
 
