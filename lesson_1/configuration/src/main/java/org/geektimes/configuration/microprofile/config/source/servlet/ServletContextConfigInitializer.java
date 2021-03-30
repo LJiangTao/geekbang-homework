@@ -36,6 +36,7 @@ public class ServletContextConfigInitializer implements ServletContextListener {
         Config config = configBuilder.build();
         // 注册 Config 关联到当前 ClassLoader
         configProviderResolver.registerConfig(config, classLoader);
+        servletContext.setAttribute("APPLICATION_CONFIG", config);
     }
 
     @Override

@@ -1,5 +1,6 @@
 package org.geektimes.projects.user.web.filter;
 
+import javax.naming.Context;
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
