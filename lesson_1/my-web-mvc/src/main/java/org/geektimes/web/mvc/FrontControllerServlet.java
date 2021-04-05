@@ -29,7 +29,6 @@ import static org.apache.commons.lang.StringUtils.substringAfter;
 
 public class FrontControllerServlet extends HttpServlet {
 
-    private final ThreadLocal<Config> threadLocal = new ThreadLocal<>();
 
     /**
      * 请求路径和 Controller 的映射关系缓存
@@ -109,12 +108,6 @@ public class FrontControllerServlet extends HttpServlet {
     public void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // 建立映射关系
         // requestURI = /a/hello/world
-        Config config = threadLocal.get();
-        if (config == null) {
-            Config applicationConfig = (Config)getServletContext().getAttribute("APPLICATION_CONFIG");
-            threadLocal.set(applicationConfig);
-            config = applicationConfig;
-        }
         String requestURI = request.getRequestURI();
         // contextPath  = /a or "/" or ""
         String servletContextPath = request.getContextPath();
