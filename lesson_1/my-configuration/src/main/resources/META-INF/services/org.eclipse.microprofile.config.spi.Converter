@@ -1,0 +1,11 @@
+org.geektimes.configuration.converters.BigDecimalConverter
+org.geektimes.configuration.converters.BigIntegerConverter
+org.geektimes.configuration.converters.BooleanConverter
+org.geektimes.configuration.converters.ByteConverter
+org.geektimes.configuration.converters.CharacterConverter
+org.geektimes.configuration.converters.DoubleConverter
+org.geektimes.configuration.converters.FloatConverter
+org.geektimes.configuration.converters.IntegerConverter
+org.geektimes.configuration.converters.LongConverter
+org.geektimes.configuration.converters.ShortConverter
+org.geektimes.configuration.converters.StringConverter

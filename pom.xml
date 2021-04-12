@@ -23,17 +23,32 @@
         <javax.servlet-api.version>3.1.0</javax.servlet-api.version>
         <javax.ws.rs-api.version>2.0.1</javax.ws.rs-api.version>
         <jstl.version>1.2</jstl.version>
+        <javax.annotation-api.version>1.3.2</javax.annotation-api.version>
+        <javax.inject.version>1</javax.inject.version>
+        <javax.cdi-api.version>2.0</javax.cdi-api.version>
+
+        <!-- MicroProfile 版本-->
+        <microprofile-config-api.version>2.0</microprofile-config-api.version>
+        <microprofile-rest-client-api.version>2.0</microprofile-rest-client-api.version>
+        <microprofile-reactive-messaging-api.version>1.0</microprofile-reactive-messaging-api.version>
+
+        <!-- 第三方开源依赖版本-->
         <commons-lang.version>2.6</commons-lang.version>
+        <commons-io.version>2.4</commons-io.version>
         <commons-validator.version>1.7</commons-validator.version>
+        <commons-configuration.version>1.10</commons-configuration.version>
+        <commons-dbcp.version>1.4</commons-dbcp.version>
         <derby.version>10.1.3.1</derby.version>
         <hibernate.version>5.4.29.Final</hibernate.version>
         <hibernate.validator.version>5.4.3.Final</hibernate.validator.version>
-        <microprofile-config-api.version>2.0</microprofile-config-api.version>
+        <glassfish-el.version>3.0.1-b08</glassfish-el.version>
+        <jackson.version>2.9.5</jackson.version>
+        <activemq.version>5.9.1</activemq.version>
+        <tomcat7.version>7.0.37</tomcat7.version>
         <jolokia.version>1.6.2</jolokia.version>
-        <!--JUnit-->
-        <junit.version>4.13</junit.version>
 
-        <!-- 其他依赖-->
+        <!-- Testing 版本 -->
+        <junit.version>4.13</junit.version>
 
         <!-- Maven Plugins 版本 -->
         <maven.compiler.version>3.8.1</maven.compiler.version>
@@ -75,6 +90,13 @@
                 <groupId>commons-lang</groupId>
                 <artifactId>commons-lang</artifactId>
                 <version>${commons-lang.version}</version>
+
+            </dependency>
+            <!-- Apache Commons I/O -->
+            <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>${commons-io.version}</version>
             </dependency>
 
             <dependency>
@@ -142,6 +164,69 @@
                 <artifactId>junit</artifactId>
                 <version>${junit.version}</version>
                 <scope>test</scope>
+            </dependency>
+
+            <!-- Jackson -->
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-core</artifactId>
+                <version>${jackson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>${jackson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-annotations</artifactId>
+                <version>${jackson.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>commons-dbcp</groupId>
+                <artifactId>commons-dbcp</artifactId>
+                <version>${commons-dbcp.version}</version>
+            </dependency>
+
+            <!-- Java Commons Annotations -->
+            <dependency>
+                <groupId>javax.annotation</groupId>
+                <artifactId>javax.annotation-api</artifactId>
+                <version>${javax.annotation-api.version}</version>
+            </dependency>
+
+            <!-- Apache ActiveMQ -->
+            <dependency>
+                <groupId>org.apache.activemq</groupId>
+                <artifactId>activemq-all</artifactId>
+                <version>${activemq.version}</version>
+            </dependency>
+
+            <!-- Apache Tomcat -->
+            <dependency>
+                <groupId>org.apache.tomcat</groupId>
+                <artifactId>tomcat-catalina-ha</artifactId>
+                <version>${tomcat7.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.tomcat</groupId>
+                <artifactId>tomcat-dbcp</artifactId>
+                <version>${tomcat7.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.tomcat</groupId>
+                <artifactId>tomcat-jdbc</artifactId>
+                <version>${tomcat7.version}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>org.eclipse.microprofile.rest.client</groupId>
+                <artifactId>microprofile-rest-client-api</artifactId>
+                <version>${microprofile-rest-client-api.version}</version>
             </dependency>
 
 

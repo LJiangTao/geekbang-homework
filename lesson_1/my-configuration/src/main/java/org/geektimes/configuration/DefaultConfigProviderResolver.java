@@ -1,9 +1,8 @@
-package org.geektimes.config;
+package org.geektimes.configuration;
 
 import org.eclipse.microprofile.config.Config;
 import org.eclipse.microprofile.config.spi.ConfigBuilder;
 import org.eclipse.microprofile.config.spi.ConfigProviderResolver;
-import org.geektimes.configuration.DefaultConfigBuilder;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -12,14 +11,6 @@ import java.util.Objects;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 
-/**
- * Microprofile Config does not contain an implementation itself but only provides the specified API
- * Microprofile 本身只有接口跟abstract class，所有api都要我们自己实现
- * <p>
- * From Documentation:
- * The implementation of this class should register itself
- * via the {@link java.util.ServiceLoader} mechanism.
- */
 public class DefaultConfigProviderResolver extends ConfigProviderResolver {
 
     private ConcurrentMap<ClassLoader, Config> configsRepository = new ConcurrentHashMap<>();

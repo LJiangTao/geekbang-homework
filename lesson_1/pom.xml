@@ -16,10 +16,11 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>configuration</module>
+        <module>my-configuration</module>
         <module>injection-dependency</module>
         <module>my-web-mvc</module>
         <module>user-web</module>
+        <module>rest-client</module>
     </modules>
 
 </project>
