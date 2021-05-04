@@ -32,61 +32,59 @@ import java.util.Hashtable;
  * Cache JMX Utilities class
  *
  * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
- * @since 1.0.0
- * Date : 2021-04-13
+ * @since 1.0.0 Date : 2021-04-13
  */
 public abstract class ManagementUtils {
 
-    public static CacheMXBean createCacheMXBean(CompleteConfiguration<?, ?> configuration) {
-        return new CacheMXBeanAdapter(configuration);
-    }
+  public static CacheMXBean createCacheMXBean(CompleteConfiguration<?, ?> configuration) {
+    return new CacheMXBeanAdapter(configuration);
+  }
 
-    private static ObjectName createObjectName(Cache<?, ?> cache,
-                                               String type) {
-        Hashtable<String, String> props = new Hashtable<>();
-        props.put("type", type);
-        props.put("name", cache.getName());
-        props.put("uri", getUri(cache));
-//        props.putAll(getProperties(cache));
-        ObjectName objectName = null;
-        try {
-            objectName = new ObjectName("javax.cache", props);
-        } catch (MalformedObjectNameException e) {
-            throw new IllegalArgumentException(e);
+  private static ObjectName createObjectName(Cache<?, ?> cache, String type) {
+    Hashtable<String, String> props = new Hashtable<>();
+    props.put("type", type);
+    props.put("name", cache.getName());
+    props.put("uri", getUri(cache));
+    //        props.putAll(getProperties(cache));
+    ObjectName objectName = null;
+    try {
+      objectName = new ObjectName("javax.cache", props);
+    } catch (MalformedObjectNameException e) {
+      throw new IllegalArgumentException(e);
+    }
+    return objectName;
+  }
+
+  //    private static Map<String, String> getProperties(Cache<?, ?> cache) {
+  //        Properties properties = cache.getCacheManager().getProperties();
+  //        Map<String, String> map = new LinkedHashMap<>();
+  //        for (String propertyName : properties.stringPropertyNames()) {
+  //            map.put(propertyName, properties.getProperty(propertyName));
+  //        }
+  //        return map;
+  //    }
+
+  private static String getUri(Cache<?, ?> cache) {
+    URI uri = cache.getCacheManager().getURI();
+    try {
+      return URLEncoder.encode(uri.toASCIIString(), "UTF-8");
+    } catch (UnsupportedEncodingException e) {
+      throw new IllegalStateException(e);
+    }
+  }
+
+  public static void registerCacheMXBeanIfRequired(Cache<?, ?> cache) {
+    CompleteConfiguration configuration = cache.getConfiguration(CompleteConfiguration.class);
+    if (configuration.isManagementEnabled()) {
+      ObjectName objectName = createObjectName(cache, "CacheConfiguration");
+      MBeanServer mBeanServer = ManagementFactory.getPlatformMBeanServer();
+      try {
+        if (!mBeanServer.isRegistered(objectName)) {
+          mBeanServer.registerMBean(createCacheMXBean(configuration), objectName);
         }
-        return objectName;
+      } catch (Exception e) {
+        throw new IllegalStateException(e);
+      }
     }
-
-//    private static Map<String, String> getProperties(Cache<?, ?> cache) {
-//        Properties properties = cache.getCacheManager().getProperties();
-//        Map<String, String> map = new LinkedHashMap<>();
-//        for (String propertyName : properties.stringPropertyNames()) {
-//            map.put(propertyName, properties.getProperty(propertyName));
-//        }
-//        return map;
-//    }
-
-    private static String getUri(Cache<?, ?> cache) {
-        URI uri = cache.getCacheManager().getURI();
-        try {
-            return URLEncoder.encode(uri.toASCIIString(), "UTF-8");
-        } catch (UnsupportedEncodingException e) {
-            throw new IllegalStateException(e);
-        }
-    }
-
-    public static void registerCacheMXBeanIfRequired(Cache<?, ?> cache) {
-        CompleteConfiguration configuration = cache.getConfiguration(CompleteConfiguration.class);
-        if (configuration.isManagementEnabled()) {
-            ObjectName objectName = createObjectName(cache, "CacheConfiguration");
-            MBeanServer mBeanServer = ManagementFactory.getPlatformMBeanServer();
-            try {
-                if (!mBeanServer.isRegistered(objectName)) {
-                    mBeanServer.registerMBean(createCacheMXBean(configuration), objectName);
-                }
-            } catch (Exception e) {
-                throw new IllegalStateException(e);
-            }
-        }
-    }
+  }
 }

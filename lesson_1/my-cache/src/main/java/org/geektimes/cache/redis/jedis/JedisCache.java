@@ -1,4 +1,4 @@
-package org.geektimes.cache.redis;
+package org.geektimes.cache.redis.jedis;
 
 import org.geektimes.cache.AbstractCache;
 import org.geektimes.cache.ExpirableEntry;

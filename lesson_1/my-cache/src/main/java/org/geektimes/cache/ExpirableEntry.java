@@ -105,7 +105,7 @@ public class ExpirableEntry<K, V> implements Cache.Entry<K, V>, Serializable {
     }
 
     public static <V> void requireValueNotNull(V value) {
-        requireNonNull(value, "The value must not be null.");
+        requireNonNull(value, "The value must not be null");
     }
 
     public static <V> void requireOldValueNotNull(V oldValue) {
